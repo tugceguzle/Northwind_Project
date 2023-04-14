@@ -17,11 +17,13 @@
     "reactstrap": "^9.1.5",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "json-server": "^0.16.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "json-server --watch db.json --port 8000 && react-scripts start",
     "build": "react-scripts build",
+    "json-server": "json-server --watch db.json --port 8000",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
